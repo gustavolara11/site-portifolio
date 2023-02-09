@@ -4,6 +4,7 @@
     <head>
       <title>Luis Gustavo Ferreira Lara</title>
       <link rel="stylesheet" href="styles.css" />
+      <script src="index.js"></script>
     </head>
   </head>
   <body>
@@ -13,11 +14,25 @@
           <div class="barra-navegacao">
             <h2 class="titulo-navegacao">Gustavo Lara</h2>
             <div>
-              <a class="titulo-link">Habilidades</a>
-              <a class="titulo-link">Portifólio</a>
-              <a class="titulo-link">Experiência</a>
+              <a
+                onclick="onClickScrollTo('section-abilities')"
+                class="titulo-link"
+                >Habilidades</a
+              >
+              <a
+                onclick="onClickScrollTo('section-portfolio')"
+                class="titulo-link"
+                >Portifólio</a
+              >
+              <a
+                onclick="onClickScrollTo('section-experiences')"
+                class="titulo-link"
+                >Experiência</a
+              >
             </div>
-            <button>CONTATO</button>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTATO
+            </button>
           </div>
           <div class="hero-info">
             <div>
@@ -28,7 +43,9 @@
                 Programador desde 2021, com foco em Node.JS, back-end.<br />
                 Atuando em mais de 10 projetos
               </p>
-              <button>ENTRAR EM CONTATO</button>
+              <button onclick="onClickScrollTo('section-contact')">
+                ENTRAR EM CONTATO
+              </button>
               <div class="hero-info-icons-container">
                 <a>
                   <img class="hero-info-icons-img" src="icons/github.png" />
@@ -53,7 +70,7 @@
             </div>
           </div>
         </section>
-        <section class="section-abilities">
+        <section class="section-abilities" id="section-abilities">
           <h3>Habilidades que</h3>
           <br />
           <h3 class="verde">domino.</h3>
@@ -134,7 +151,7 @@
             </div>
           </div>
         </section>
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="section-portfolio">
           <h3>Portifólio</h3>
           <br />
           <h3 class="verde">de projetos.</h3>
@@ -216,7 +233,7 @@
             </div>
           </div>
         </section>
-        <section class="section-experiences">
+        <section class="section-experiences" id="section-experiences">
           <h3>Experiências</h3>
           <br />
           <h3 class="verde">profissionais.</h3>
@@ -261,7 +278,7 @@
             </div>
           </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
           <h3>Como posso</h3>
           <br />
           <h3 class="verde">te ajudar?</h3>
